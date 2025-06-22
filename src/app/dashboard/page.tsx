@@ -16,16 +16,16 @@ import {
   Eye,
   Edit
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import AuctionCard from '@/components/auction-card';
-import { useAuth } from '@/lib/auth-context';
-import { featuredAuctions } from '@/lib/mock-data';
+import { Button } from '@/src/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/src/components/ui/card';
+import { Badge } from '@/src/components/ui/badge';
+import { Avatar, AvatarFallback } from '@/src/components/ui/avatar';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/components/ui/tabs';
+import Header from '@/src/components/header';
+import Footer from '@/src/components/footer';
+import AuctionCard from '@/src/components/auction-card';
+import { useAuth } from '@/src/lib/auth-context';
+import { featuredAuctions } from '@/src/lib/mock-data';
 
 export default function DashboardPage() {
   const { user } = useAuth();
@@ -271,7 +271,7 @@ export default function DashboardPage() {
                     {[1, 2].map((item) => (
                       <div key={item} className="flex items-center justify-between p-3 rounded-lg border">
                         <div>
-                          <p className="font-medium">MacBook Pro 16" M3 Max</p>
+                          <p className="font-medium">MacBook Pro 16&ldquo; M3 Max</p>
                           <Badge variant="secondary">Payment Required</Badge>
                         </div>
                         <div className="text-right">
@@ -367,7 +367,7 @@ export default function DashboardPage() {
                           <span className="text-sm text-muted-foreground">2 hours ago</span>
                         </div>
                         <p className="text-sm text-muted-foreground mb-1">Re: Vintage Guitar Auction</p>
-                        <p className="text-sm">Hi, I'm interested in the guitar. Can you provide more details about the condition?</p>
+                        <p className="text-sm">Hi, I&apos;m interested in the guitar. Can you provide more details about the condition?</p>
                       </div>
                       {message <= 3 && (
                         <Badge variant="destructive" className="px-1 min-w-[8px] h-2"></Badge>

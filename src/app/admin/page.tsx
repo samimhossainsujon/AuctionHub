@@ -15,11 +15,11 @@ import {
   BarChart3,
   Settings
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Input } from '@/components/ui/input';
+import { Button } from '@/src/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/src/components/ui/card';
+import { Badge } from '@/src/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/components/ui/tabs';
+import { Input } from '@/src/components/ui/input';
 import { 
   Table, 
   TableBody, 
@@ -27,11 +27,11 @@ import {
   TableHead, 
   TableHeader, 
   TableRow 
-} from '@/components/ui/table';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { useAuth } from '@/lib/auth-context';
-import { featuredAuctions } from '@/lib/mock-data';
+} from '@/src/components/ui/table';
+import Header from '@/src/components/header';
+import Footer from '@/src/components/footer';
+import { useAuth } from '@/src/lib/auth-context';
+import { featuredAuctions } from '@/src/lib/mock-data';
 
 export default function AdminPage() {
   const { user } = useAuth();
@@ -43,7 +43,7 @@ export default function AdminPage() {
         <Header />
         <div className="container mx-auto px-4 py-20 text-center">
           <h1 className="text-2xl font-bold mb-4">Access Denied</h1>
-          <p className="text-muted-foreground mb-8">You don't have permission to access this page.</p>
+          <p className="text-muted-foreground mb-8">You don&lsquo;t have permission to access this page.</p>
           <Button asChild>
             <Link href="/">Go Home</Link>
           </Button>
@@ -63,10 +63,10 @@ export default function AdminPage() {
   };
 
   const recentUsers = [
-    { id: 1, name: 'John Smith', email: 'john@example.com', joined: '2024-12-20', status: 'active' },
-    { id: 2, name: 'Sarah Johnson', email: 'sarah@example.com', joined: '2024-12-19', status: 'pending' },
-    { id: 3, name: 'Mike Brown', email: 'mike@example.com', joined: '2024-12-18', status: 'active' },
-    { id: 4, name: 'Emily Davis', email: 'emily@example.com', joined: '2024-12-17', status: 'suspended' }
+    { id: 1, name: 'John Smith', email: 'john@/srcexample.com', joined: '2024-12-20', status: 'active' },
+    { id: 2, name: 'Sarah Johnson', email: 'sarah@/srcexample.com', joined: '2024-12-19', status: 'pending' },
+    { id: 3, name: 'Mike Brown', email: 'mike@/srcexample.com', joined: '2024-12-18', status: 'active' },
+    { id: 4, name: 'Emily Davis', email: 'emily@/srcexample.com', joined: '2024-12-17', status: 'suspended' }
   ];
 
   return (

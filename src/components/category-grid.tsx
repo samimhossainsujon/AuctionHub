@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { categories } from '@/lib/mock-data';
+import { Card, CardContent } from '@/src/components/ui/card';
+import { Badge } from '@/src/components/ui/badge';
+import { categories } from '@/src/lib/mock-data';
 import * as Icons from 'lucide-react';
 
 export default function CategoryGrid() {
@@ -15,7 +15,11 @@ export default function CategoryGrid() {
             <Card className="card-hover h-full">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 bg-primary/10 rounded-lg flex items-center justify-center">
-                  {IconComponent && <IconComponent size={24} className="text-primary" />}
+                  {IconComponent && (
+                    <span className="text-primary">
+                      <IconComponent size={24} />
+                    </span>
+                  )}
                 </div>
                 <h3 className="font-semibold text-sm mb-2">{category.name}</h3>
                 <Badge variant="secondary" className="text-xs">

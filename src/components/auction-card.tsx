@@ -4,10 +4,10 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, Heart, Eye, MapPin, Star } from 'lucide-react';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Auction } from '@/lib/types';
+import { Card, CardContent, CardFooter } from '@/src/components/ui/card';
+import { Button } from '@/src/components/ui/button';
+import { Badge } from '@/src/components/ui/badge';
+import { Auction } from '@/src/lib/types';
 
 interface AuctionCardProps {
   auction: Auction;

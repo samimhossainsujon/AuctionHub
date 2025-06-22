@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { ArrowRight, TrendingUp, Shield, Clock, Users } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import AuctionCard from '@/components/auction-card';
-import CategoryGrid from '@/components/category-grid';
-import { featuredAuctions, recentAuctions } from '@/lib/mock-data';
+import Header from '../components/header';
+import { Button } from '../components/ui/button';
+import { featuredAuctions, recentAuctions } from '../lib/mock-data';
+import AuctionCard from '../components/auction-card';
+import CategoryGrid from '../components/category-grid';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import Footer from '../components/footer';
 
 export default function HomePage() {
   return (
@@ -21,7 +21,7 @@ export default function HomePage() {
             <span className="text-yellow-300">Auction Deals</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Join millions of buyers and sellers in the world's largest online auction marketplace. 
+            Join millions of buyers and sellers in the world&lsquo;s largest online auction marketplace. 
             Find unique items, great deals, and sell your treasures.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -89,7 +89,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Shop by Category</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Explore our diverse range of categories and find exactly what you're looking for
+              Explore our diverse range of categories and find exactly what you&#39;re looking for
             </p>
           </div>
           <CategoryGrid />

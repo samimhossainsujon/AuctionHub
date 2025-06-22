@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 import { ArrowLeft, Search, MessageCircle, Phone, Mail, Clock, CheckCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import { Button } from '@/src/components/ui/button';
+import { Input } from '@/src/components/ui/input';
+import { Card, CardContent, CardHeader, CardTitle } from '@/src/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/src/components/ui/accordion';
+import Header from '@/src/components/header';
+import Footer from '@/src/components/footer';
 
 export default function HelpPage() {
   const popularTopics = [
@@ -181,7 +181,7 @@ export default function HelpPage() {
             </div>
             <div className="mt-4 p-3 bg-green-50 rounded-lg flex items-center space-x-2">
               <CheckCircle className="w-5 h-5 text-green-600" />
-              <span className="text-green-800 text-sm">We're currently online and ready to help!</span>
+              <span className="text-green-800 text-sm">We&lsquo;re currently online and ready to help!</span>
             </div>
           </CardContent>
         </Card>

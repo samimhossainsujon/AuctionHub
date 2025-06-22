@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Search, Heart, ShoppingCart, User, Menu, Bell, MessageSquare } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/src/components/ui/button';
+import { Input } from '@/src/components/ui/input';
+import { Badge } from '@/src/components/ui/badge';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,9 +13,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { useAuth } from '@/lib/auth-context';
+} from '@/src/components/ui/dropdown-menu';
+import { Sheet, SheetContent, SheetTrigger } from '@/src/components/ui/sheet';
+import { useAuth } from '@/src/lib/auth-context';
 
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
